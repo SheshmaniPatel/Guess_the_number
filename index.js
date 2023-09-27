@@ -26,10 +26,13 @@ if (playGame) {
 
 function validateGuess(guess) {
   if (isNaN(guess)) {
+    userInput.value=''
     alert('PLease enter a valid number');
   } else if (guess < 1) {
+    userInput.value=''
     alert('PLease enter a number more than 1');
   } else if (guess > 100) {
+    userInput.value=''
     alert('PLease enter a  number less than 100');
   } else {
     prevGuess.push(guess);
